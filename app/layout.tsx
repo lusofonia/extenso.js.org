@@ -12,16 +12,15 @@ export const metadata: Metadata = {
   title: 'Extenso.js | Números por extenso em JavaScript',
   description: 'Uma biblioteca avançada para escrever números por extenso em português. Suporte a BigInt, múltiplas moedas, dialetos e escalas. Zero dependências, 100% TypeScript.',
   keywords: ['javascript', 'typescript', 'números por extenso', 'extenso', 'português', 'biblioteca', 'npm', 'bigint', 'moedas', 'open source', 'zero dependências'],
-  authors: [{ name: 'Lusofonia', url: 'https://github.com/lusofonia' }],
-  creator: 'Lusofonia',
-  publisher: 'Lusofonia',
-  generator: 'v0.app',
+  authors: [{ name: 'Fidalgo IT Solutions', url: 'https://fidalgoitsolutions.com.br' }],
+  creator: 'Fidalgo IT Solutions',
+  publisher: 'Fidalgo IT Solutions',
   
   // Open Graph metadata
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    alternateLocale: ['pt_PT', 'en_US'],
+    alternateLocale: ['pt_PT'],
     url: 'https://extenso.js.org',
     siteName: 'Extenso.js',
     title: 'Extenso.js | Números por extenso em JavaScript',
@@ -42,7 +41,7 @@ export const metadata: Metadata = {
     title: 'Extenso.js | Números por extenso em JavaScript',
     description: 'Uma biblioteca avançada para escrever números por extenso em português. Suporte a BigInt, múltiplas moedas, dialetos e escalas. Zero dependências, 100% TypeScript.',
     images: ['/og-banner.png'],
-    creator: '@lusofonia',
+    creator: '@fidalgoitsolutions',
   },
 
   // Additional metadata
@@ -85,17 +84,12 @@ export default function RootLayout({
               offers: {
                 '@type': 'Offer',
                 price: '0',
-                priceCurrency: 'USD',
-              },
-              aggregateRating: {
-                '@type': 'AggregateRating',
-                ratingValue: '4.9',
-                reviewCount: '275',
+                priceCurrency: 'BRL',
               },
               author: {
                 '@type': 'Organization',
-                name: 'Lusofonia',
-                url: 'https://github.com/lusofonia',
+                name: 'Fidalgo IT Solutions',
+                url: 'https://fidalgoitsolutions.com.br',
               },
               downloadUrl: 'https://www.npmjs.com/package/extenso',
               softwareVersion: '2.1.0',

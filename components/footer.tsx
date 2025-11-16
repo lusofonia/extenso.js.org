@@ -66,9 +66,9 @@ export function Footer() {
 
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400 flex items-center gap-2">
-            Criado e mantido por
+            Desenvolvido e mantido por
             <Link href="https://github.com/theuves" target="_blank" className="text-white hover:text-[gray] transition-colors">
-              Matheus Alves
+              Fidalgo IT Solutions
             </Link>
             desde 2015.
           </p>
@@ -79,7 +79,7 @@ export function Footer() {
             className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
           >
             <Github className="h-4 w-4" />
-            <span>© 2015 – 2025 Matheus Alves | MIT</span>
+            <span>© 2015 - 2025 Fidalgo IT Solutions | MIT</span>
           </Link>
         </div>
       </div>
