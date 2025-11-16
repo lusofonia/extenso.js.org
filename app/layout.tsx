@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: 'Uma biblioteca avançada para escrever números por extenso em português. Suporte a BigInt, múltiplas moedas, dialetos e escalas. Zero dependências, 100% TypeScript.',
     images: [
       {
-        url: '/og-banner.png',
+        url: 'https://extenso.js.org/og-banner.png',
         width: 1280,
         height: 627,
         alt: 'Extenso.js - Números por extenso com JavaScript',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Extenso.js | Números por extenso em JavaScript',
     description: 'Uma biblioteca avançada para escrever números por extenso em português. Suporte a BigInt, múltiplas moedas, dialetos e escalas. Zero dependências, 100% TypeScript.',
-    images: ['/og-banner.png'],
+    images: ['https://extenso.js.org/og-banner.png'],
     creator: '@fidalgoitsolutions',
   },
 
