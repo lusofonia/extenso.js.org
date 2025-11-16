@@ -1,30 +1,100 @@
-# Extenso.js website
+# Extenso.js.org
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Site de documentação e landing page para a biblioteca [Extenso.js](https://github.com/lusofonia/extenso.js) - uma biblioteca JavaScript para escrever números por extenso em português.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/theuves-projects/v0-extenso-js-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/rlJhYox34yc)
+## 📋 Sobre o Projeto
 
-## Overview
+Este é o site oficial da biblioteca Extenso.js, construído com Next.js e TypeScript. O site apresenta as funcionalidades, casos de uso e documentação da biblioteca de forma moderna e responsiva.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## ✨ Características
 
-## Deployment
+- **Design Moderno**: Interface limpa e profissional com suporte a tema claro/escuro
+- **Responsivo**: Totalmente adaptável para dispositivos móveis, tablets e desktops
+- **Performance**: Construído com Next.js para máxima performance e SEO
+- **TypeScript**: Totalmente tipado para melhor experiência de desenvolvimento
 
-Your project is live at:
+## 🚀 Tecnologias Utilizadas
 
-**[https://vercel.com/theuves-projects/v0-extenso-js-website](https://vercel.com/theuves-projects/v0-extenso-js-website)**
+- [Next.js 16](https://nextjs.org/) - Framework React
+- [React 19](https://react.dev/) - Biblioteca UI
+- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática
+- [Tailwind CSS](https://tailwindcss.com/) - Estilização
+- [Radix UI](https://www.radix-ui.com/) - Componentes acessíveis
+- [shadcn/ui](https://ui.shadcn.com/) - Componentes UI
+- [Lucide React](https://lucide.dev/) - Ícones
 
-## Build your app
+## 📦 Instalação
 
-Continue building your app on:
+```bash
+# Clone o repositório
+git clone https://github.com/lusofonia/extenso.js.org.git
 
-**[https://v0.app/chat/rlJhYox34yc](https://v0.app/chat/rlJhYox34yc)**
+# Entre no diretório
+cd extenso.js.org
 
-## How It Works
+# Instale as dependências
+npm install
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+# Execute o servidor de desenvolvimento
+npm run dev
+```
+
+Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado.
+
+## 🛠️ Scripts Disponíveis
+
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria a build de produção
+- `npm run lint` - Executa o linter
+- `npm run deploy` - Faz build e deploy para GitHub Pages
+
+## 📁 Estrutura do Projeto
+
+```
+extenso.js.org/
+├── app/              # Páginas e layouts do Next.js
+├── components/       # Componentes React
+│   ├── ui/          # Componentes UI reutilizáveis
+│   ├── hero.tsx     # Seção hero
+│   ├── features.tsx # Seção de recursos
+│   ├── installation.tsx # Seção de instalação
+│   └── ...
+├── lib/             # Utilitários
+├── public/          # Arquivos estáticos
+└── styles/          # Estilos globais
+```
+
+## 🎨 Componentes Principais
+
+- **Hero**: Seção principal com apresentação da biblioteca
+- **Features**: Destaque dos principais recursos do Extenso.js
+- **Use Cases**: Casos de uso práticos
+- **Installation**: Guia de instalação e uso básico
+- **Footer**: Rodapé com links e informações
+
+## 🌐 Deploy
+
+O site está configurado para deploy no GitHub Pages. Execute:
+
+```bash
+npm run deploy
+```
+
+## 📄 Licença
+
+Este projeto é open source e está disponível sob a licença MIT.
+
+## 🔗 Links
+
+- [Biblioteca Extenso.js](https://github.com/lusofonia/extenso.js)
+- [Documentação](https://github.com/lusofonia/extenso.js#readme)
+- [NPM Package](https://www.npmjs.com/package/extenso)
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
+
+---
+
+Desenvolvido com ❤️ pela comunidade Extenso.js
+
