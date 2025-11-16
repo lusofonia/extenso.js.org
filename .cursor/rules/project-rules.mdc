@@ -1,0 +1,32 @@
+---
+alwaysApply: true
+---
+
+# Git Commit Message Rules
+
+## CRITICAL: Commit messages MUST be extremely short
+
+- **MANDATORY**: Git commit messages MUST be 50 characters or less
+- **MANDATORY**: Git commit messages MUST be a single line only
+- **FORBIDDEN**: NO descriptions, NO bullet points, NO multi-line messages
+- **FORBIDDEN**: NO explanations, NO details, NO context in commit messages
+
+## Examples of CORRECT commit messages:
+- "Fix bug"
+- "Add feature"
+- "Update style"
+- "Refactor code"
+
+## Examples of INCORRECT commit messages:
+- "Fix bug in authentication system that was causing login failures" ❌
+- "Add new feature for user dashboard\n- Implemented charts\n- Added filters" ❌
+- "Update: Improved the styling of the header component to match design system" ❌
+
+## When generating commit messages:
+1. Count characters - MUST be ≤ 50
+2. Use imperative mood
+3. Be concise and direct
+4. NO exceptions to the 50 character limit
+
+- NEVER write a Git commit message with more than 50 chars.
+- NEVER write a Git commit message with descriptions and bullet points.

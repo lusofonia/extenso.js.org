@@ -1,20 +1,30 @@
-# Extenso.js.org
+# Extenso.js website
 
-> Homepage da biblioteca [Extenso.js](https://github.com/theuves/extenso.js).
+*Automatically synced with your [v0.app](https://v0.app) deployments*
 
-## Setup
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/theuves-projects/v0-extenso-js-website)
+[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/rlJhYox34yc)
 
-```bash
-git clone https://github.com/theuves/extenso.js
+## Overview
 
-cd clone
-```
+This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
+Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
 
-### `package.json` scripts
+## Deployment
 
-* `npm start` - Rodar página em `localhost:5000`
-* `npm run deploy` - Fazer deploy do site no GitHub Pages
+Your project is live at:
 
-### License
+**[https://vercel.com/theuves-projects/v0-extenso-js-website](https://vercel.com/theuves-projects/v0-extenso-js-website)**
 
-MIT
+## Build your app
+
+Continue building your app on:
+
+**[https://v0.app/chat/rlJhYox34yc](https://v0.app/chat/rlJhYox34yc)**
+
+## How It Works
+
+1. Create and modify your project using [v0.app](https://v0.app)
+2. Deploy your chats from the v0 interface
+3. Changes are automatically pushed to this repository
+4. Vercel deploys the latest version from this repository
