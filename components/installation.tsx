@@ -120,7 +120,7 @@ export function Installation() {
 
           <div className="relative group">
             <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <Card className="relative bg-[#1e1e1e] border-zinc-800 overflow-hidden py-0">
+            <Card className="relative bg-[#1e1e1e] border-zinc-800 overflow-hidden py-0 gap-0">
               <div className="flex items-center justify-between px-4 py-3 bg-[#2d2d2d] border-b border-zinc-800">
                 <div className="flex items-center gap-3">
                   <div className="flex gap-1.5">
