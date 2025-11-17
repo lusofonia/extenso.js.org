@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Instagram, Minimize2, Rocket, Sparkles, X } from 'lucide-react'
 
@@ -9,6 +9,47 @@ import { Button } from '@/components/ui/button'
 export function FloatingDeployAd() {
   const [isVisible, setIsVisible] = useState(true)
   const [isCollapsed, setIsCollapsed] = useState(false)
+  const [isDesktop, setIsDesktop] = useState(false)
+  const [isDelayComplete, setIsDelayComplete] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = typeof window !== 'undefined' ? window.matchMedia('(min-width: 1024px)') : null
+
+    const handleChange = (event: MediaQueryListEvent) => {
+      setIsDesktop(event.matches)
+    }
+
+    if (mediaQuery) {
+      setIsDesktop(mediaQuery.matches)
+      if (typeof mediaQuery.addEventListener === 'function') {
+        mediaQuery.addEventListener('change', handleChange)
+      } else if (typeof mediaQuery.addListener === 'function') {
+        mediaQuery.addListener(handleChange)
+      }
+    }
+
+    return () => {
+      if (mediaQuery) {
+        if (typeof mediaQuery.removeEventListener === 'function') {
+          mediaQuery.removeEventListener('change', handleChange)
+        } else if (typeof mediaQuery.removeListener === 'function') {
+          mediaQuery.removeListener(handleChange)
+        }
+      }
+    }
+  }, [])
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setIsDelayComplete(true)
+    }, 3000)
+
+    return () => clearTimeout(timeout)
+  }, [])
+
+  if (!isDesktop || !isDelayComplete) {
+    return null
+  }
 
   if (!isVisible) {
     return null
