@@ -11,6 +11,7 @@ export function FloatingDeployAd() {
   const [isCollapsed, setIsCollapsed] = useState(false)
   const [isDesktop, setIsDesktop] = useState(false)
   const [isDelayComplete, setIsDelayComplete] = useState(false)
+  const [hasEntered, setHasEntered] = useState(false)
 
   useEffect(() => {
     const mediaQuery = typeof window !== 'undefined' ? window.matchMedia('(min-width: 1024px)') : null
@@ -47,6 +48,14 @@ export function FloatingDeployAd() {
     return () => clearTimeout(timeout)
   }, [])
 
+  useEffect(() => {
+    if (isDesktop && isDelayComplete && isVisible) {
+      requestAnimationFrame(() => setHasEntered(true))
+    } else {
+      setHasEntered(false)
+    }
+  }, [isDesktop, isDelayComplete, isVisible])
+
   if (!isDesktop || !isDelayComplete) {
     return null
   }
@@ -72,7 +81,10 @@ export function FloatingDeployAd() {
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 w-64 pointer-events-none">
+    <div
+      className="fixed bottom-4 right-4 z-50 w-64 pointer-events-none transition-all duration-500 ease-out opacity-0 translate-y-4 data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+      data-visible={hasEntered}
+    >
       <article className="pointer-events-auto rounded-2xl border border-border/70 bg-card/95 text-card-foreground shadow-2xl shadow-primary/10 backdrop-blur-xl p-4 relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-60"
