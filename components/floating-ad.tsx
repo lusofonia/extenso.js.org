@@ -49,18 +49,14 @@ export function FloatingDeployAd() {
   }, [])
 
   useEffect(() => {
-    if (isDesktop && isDelayComplete && isVisible) {
+    if (isDesktop && isDelayComplete) {
       requestAnimationFrame(() => setHasEntered(true))
     } else {
       setHasEntered(false)
     }
-  }, [isDesktop, isDelayComplete, isVisible])
+  }, [isDesktop, isDelayComplete])
 
   if (!isDesktop || !isDelayComplete) {
-    return null
-  }
-
-  if (!isVisible) {
     return null
   }
 
@@ -107,14 +103,6 @@ export function FloatingDeployAd() {
               aria-label="Minimizar banner de deploy"
             >
               <Minimize2 className="h-4 w-4" />
-            </button>
-            <button
-              type="button"
-              onClick={() => setIsVisible(false)}
-              className="rounded-full border border-border/60 bg-background/70 p-1 text-muted-foreground transition hover:text-foreground"
-              aria-label="Fechar banner de deploy"
-            >
-              <X className="h-4 w-4" />
             </button>
           </div>
         </div>
