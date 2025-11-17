@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 import { Inter, JetBrains_Mono, Libre_Franklin as V0_Font_Libre_Franklin, Source_Code_Pro as V0_Font_Source_Code_Pro } from 'next/font/google'
+import { FloatingDeployAd } from '@/components/floating-ad'
 
 const _libreFranklin = V0_Font_Libre_Franklin({ subsets: ['latin'], weight: ["100","200","300","400","500","600","700","800","900"] })
 const _sourceCodePro = V0_Font_Source_Code_Pro({ subsets: ['latin'], weight: ["200","300","400","500","600","700","800","900"] })
@@ -100,6 +101,7 @@ export default function RootLayout({
       </head>
       <body className={`antialiased`}>
         {children}
+        <FloatingDeployAd />
         <Analytics />
       </body>
     </html>
