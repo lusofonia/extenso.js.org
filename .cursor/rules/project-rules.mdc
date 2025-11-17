@@ -30,3 +30,10 @@ alwaysApply: true
 
 - NEVER write a Git commit message with more than 50 chars.
 - NEVER write a Git commit message with descriptions and bullet points.
+
+# Design System Enforcement
+
+- Sempre utilize os tokens e variáveis definidos em `styles/globals.css` (e espelhados em `app/globals.css`) para cores, radii, tipografia e temas claro/escuro. Não crie cores ou medidas ad hoc fora desses arquivos.
+- Os componentes base reutilizáveis vivem em `components/ui/` e os blocos de página em `components/`. Expanda a interface apenas estendendo esses componentes ou acrescentando novos arquivos nesses diretórios, mantendo o padrão existente.
+- Qualquer ajuste visual deve respeitar o padrão atual do site observado nos componentes (`components/header.tsx`, `components/footer.tsx`, `components/hero.tsx`, etc.). Replique estilos por meio de utilitários e classes existentes em vez de redefini-los.
+- Novos estilos globais ou mudanças em tokens precisam ser feitos em `styles/globals.css` para garantir consistência temática em todo o site.
