@@ -77,7 +77,6 @@ export function Features() {
                 shadow: 'hover:shadow-primary/10',
                 icon: 'bg-primary/10 border-primary/20',
                 iconColor: 'text-primary',
-                glow: 'bg-primary/5',
                 hoverText: 'group-hover:text-primary'
               },
               blue: {
@@ -86,7 +85,6 @@ export function Features() {
                 shadow: 'hover:shadow-blue-500/10',
                 icon: 'bg-blue-500/10 border-blue-500/20',
                 iconColor: 'text-blue-600',
-                glow: 'bg-blue-500/5',
                 hoverText: 'group-hover:text-blue-600'
               },
               orange: {
@@ -95,7 +93,6 @@ export function Features() {
                 shadow: 'hover:shadow-orange-500/10',
                 icon: 'bg-orange-500/10 border-orange-500/20',
                 iconColor: 'text-orange-600',
-                glow: 'bg-orange-500/5',
                 hoverText: 'group-hover:text-orange-600'
               }
             }[feature.color]
@@ -109,14 +106,6 @@ export function Features() {
                 className="group"
               >
                 <Card className={`p-8 h-full bg-gradient-to-br ${colorClasses.bg} border-2 ${colorClasses.border} hover:shadow-xl ${colorClasses.shadow} transition-all duration-500 group-hover:scale-[1.02] relative overflow-hidden`}>
-                  {/* Glow effect on hover */}
-                  <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity blur-2xl ${colorClasses.glow}`} />
-                  
-                  {/* Background pattern sutil */}
-                  <div className="absolute inset-0 opacity-[0.02] group-hover:opacity-[0.04] transition-opacity">
-                    <div className="absolute inset-0 border-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0)', backgroundSize: '24px 24px' }} />
-                  </div>
-                  
                   <div className="relative z-10 flex flex-col h-full">
                     <div className="flex items-start justify-between mb-6">
                       <div className={`w-14 h-14 rounded-xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all border ${colorClasses.icon}`}>
