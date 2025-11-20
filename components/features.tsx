@@ -70,7 +70,7 @@ export function Features() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon
-            const colorClasses = {
+            const colorClassesMap = {
               primary: {
                 bg: 'from-primary/5 to-transparent',
                 border: 'border-primary/20 hover:border-primary/40',
@@ -95,7 +95,8 @@ export function Features() {
                 iconColor: 'text-orange-600',
                 hoverText: 'group-hover:text-orange-600'
               }
-            }[feature.color]
+            } as const
+            const colorClasses = colorClassesMap[feature.color as keyof typeof colorClassesMap] ?? colorClassesMap.primary
 
             return (
               <a
