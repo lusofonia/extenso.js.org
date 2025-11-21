@@ -19,7 +19,7 @@ export function Support() {
             </p>
             
             <p className="text-sm leading-relaxed text-muted-foreground">
-              Como o projeto é open source e não gera lucro direto, sua doação ajuda a manter o foco e a evolução das ferramentas. Qualquer valor é bem-vindo!
+              Como o projeto é open source e não gera lucro direto, sua doação ajuda a manter o foco e a evolução da ferramenta. Qualquer valor é bem-vindo!
             </p>
           </div>
 
