@@ -1,5 +1,6 @@
 import { Header } from '@/components/header'
 import { Hero } from '@/components/hero'
+import { Support } from '@/components/support'
 import { Features } from '@/components/features'
 import { Installation } from '@/components/installation'
 import { UseCases } from '@/components/use-cases'
@@ -11,6 +12,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <Support />
       <Features />
       <UseCases />
       <Installation />
