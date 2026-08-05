@@ -33,7 +33,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   color: #f7faf7;
 }
 .header-inner {
-  width: min(1040px, calc(100% - 24px));
+  width: min(900px, calc(100% - 24px));
   min-height: 42px;
   margin: auto;
   display: flex;
@@ -58,7 +58,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .paper-header nav svg { width: 13px; height: 13px; }
 
 .paper {
-  width: min(1040px, calc(100% - 24px));
+  width: min(900px, calc(100% - 24px));
   min-height: 100vh;
   margin: 0 auto;
   padding: 46px clamp(22px, 6vw, 92px) 38px;
