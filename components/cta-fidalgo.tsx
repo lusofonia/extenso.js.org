@@ -16,7 +16,7 @@ export function CtaFidalgo() {
       <div className="absolute top-20 left-10 w-72 h-72 rounded-full blur-3xl opacity-20" style={{ backgroundColor: 'oklch(0.45 0.15 165)' }} />
       <div className="absolute bottom-20 right-10 w-96 h-96 rounded-full blur-3xl opacity-20" style={{ backgroundColor: 'oklch(0.5 0.18 165)' }} />
 
-      <div className="container mx-auto max-w-6xl relative z-10">
+      <div className="container mx-auto max-w-[900px] relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Content */}
           <div className="text-white">

@@ -47,7 +47,7 @@ export function Installation() {
       {/* Additional gradient overlay for smooth transitions */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/30" />
 
-      <div className="container mx-auto max-w-5xl relative z-10">
+      <div className="container mx-auto max-w-[900px] relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
           

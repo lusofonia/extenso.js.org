@@ -20,7 +20,7 @@ export function Hero() {
       <div className="absolute bottom-10 right-20 w-96 h-96 rounded-full opacity-15 blur-3xl" 
            style={{ backgroundColor: 'oklch(0.5 0.18 165)' }} />
 
-      <div className="container mx-auto max-w-6xl relative z-10">
+      <div className="container mx-auto max-w-[900px] relative z-10">
         <div className="text-center space-y-8">
           {/* Badge com estilo moderno */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 backdrop-blur-sm text-sm font-medium mb-4" 

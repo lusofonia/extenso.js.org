@@ -61,7 +61,7 @@ export function UseCases() {
         backgroundSize: '200px 200px'
       }} />
       
-      <div className="container mx-auto max-w-6xl relative z-10">
+      <div className="container mx-auto max-w-[900px] relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance text-neutral-900">
             Casos de uso

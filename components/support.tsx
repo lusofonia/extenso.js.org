@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button'
 export function Support() {
   return (
     <section className="py-12 px-4" style={{ backgroundColor: 'oklch(0.98 0.03 85)' }}>
-      <div className="container mx-auto max-w-6xl">
+      <div className="container mx-auto max-w-[900px]">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Texto à esquerda */}
           <div className="flex-1 space-y-3">
