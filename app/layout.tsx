@@ -3,49 +3,67 @@ import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-import { Inter, JetBrains_Mono, Libre_Franklin as V0_Font_Libre_Franklin, Source_Code_Pro as V0_Font_Source_Code_Pro } from 'next/font/google'
-import { FloatingDeployAd } from '@/components/floating-ad'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 
-const _libreFranklin = V0_Font_Libre_Franklin({ subsets: ['latin'], weight: ["100","200","300","400","500","600","700","800","900"] })
-const _sourceCodePro = V0_Font_Source_Code_Pro({ subsets: ['latin'], weight: ["200","300","400","500","600","700","800","900"] })
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+const jetBrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' })
 
 export const metadata: Metadata = {
-  title: 'Extenso.js | Números por extenso em JavaScript',
-  description: 'Uma biblioteca avançada para escrever números por extenso em português. Suporte a BigInt, múltiplas moedas, dialetos e escalas. Zero dependências, 100% TypeScript.',
-  keywords: ['javascript', 'typescript', 'números por extenso', 'extenso', 'português', 'biblioteca', 'npm', 'bigint', 'moedas', 'open source', 'zero dependências'],
-  authors: [{ name: 'Fidalgo IT Solutions', url: 'https://fidalgoitsolutions.com.br' }],
-  creator: 'Fidalgo IT Solutions',
-  publisher: 'Fidalgo IT Solutions',
-  
-  // Open Graph metadata
+  metadataBase: new URL('https://extenso.js.org'),
+  title: 'Extenso.js — Números por extenso em JavaScript',
+  description: 'Biblioteca JavaScript para escrever números, moedas, frações, percentuais e medidas por extenso nas variantes dos países lusófonos e de Macau.',
+  keywords: [
+    'números por extenso',
+    'números por extenso JavaScript',
+    'português',
+    'português brasileiro',
+    'português europeu',
+    'países lusófonos',
+    'Angola',
+    'Brasil',
+    'Cabo Verde',
+    'Guiné-Bissau',
+    'Macau',
+    'Moçambique',
+    'Portugal',
+    'São Tomé e Príncipe',
+    'valores monetários por extenso',
+    'javascript',
+    'typescript',
+    'bigint',
+    'npm',
+  ],
+  authors: [{ name: 'Matheus Alves', url: 'https://www.linkedin.com/in/matheusalvesbrx/' }],
+  creator: 'Matheus Alves',
+  alternates: {
+    canonical: '/',
+  },
+
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    alternateLocale: ['pt_PT'],
+    alternateLocale: ['pt_AO', 'pt_CV', 'pt_GW', 'pt_MO', 'pt_MZ', 'pt_PT', 'pt_ST'],
     url: 'https://extenso.js.org',
     siteName: 'Extenso.js',
-    title: 'Extenso.js | Números por extenso em JavaScript',
-    description: 'Uma biblioteca avançada para escrever números por extenso em português. Suporte a BigInt, múltiplas moedas, dialetos e escalas. Zero dependências, 100% TypeScript.',
+    title: 'Extenso.js — Números por extenso em JavaScript',
+    description: 'Números, moedas, frações, percentuais e medidas por extenso para os países lusófonos e Macau.',
     images: [
       {
-        url: 'https://extenso.js.org/og-banner.png',
-        width: 1280,
-        height: 627,
-        alt: 'Extenso.js - Números por extenso com JavaScript',
+        url: 'https://extenso.js.org/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Extenso.js — números por extenso para o mundo lusófono',
       },
     ],
   },
 
-  // Twitter Card metadata
   twitter: {
     card: 'summary_large_image',
-    title: 'Extenso.js | Números por extenso em JavaScript',
-    description: 'Uma biblioteca avançada para escrever números por extenso em português. Suporte a BigInt, múltiplas moedas, dialetos e escalas. Zero dependências, 100% TypeScript.',
-    images: ['https://extenso.js.org/og-banner.png'],
-    creator: '@fidalgoitsolutions',
+    title: 'Extenso.js — Números por extenso em JavaScript',
+    description: 'Números, moedas, frações, percentuais e medidas por extenso para os países lusófonos e Macau.',
+    images: ['https://extenso.js.org/og.png'],
   },
 
-  // Additional metadata
   robots: {
     index: true,
     follow: true,
@@ -58,7 +76,6 @@ export const metadata: Metadata = {
     },
   },
 
-  // Category
   category: 'technology',
 }
 
@@ -68,7 +85,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt">
       <head>
         <script
           async
@@ -93,29 +110,33 @@ export default function RootLayout({
               name: 'Extenso.js',
               applicationCategory: 'DeveloperApplication',
               operatingSystem: 'Any',
-              description: 'Uma biblioteca avançada para escrever números por extenso em português. Suporte a BigInt, múltiplas moedas, dialetos e escalas.',
+              description: 'Biblioteca JavaScript para escrever números, moedas, frações, percentuais e medidas por extenso nas variantes dos países lusófonos e de Macau.',
+              inLanguage: ['pt-AO', 'pt-BR', 'pt-CV', 'pt-GW', 'pt-MO', 'pt-MZ', 'pt-PT', 'pt-ST'],
               url: 'https://extenso.js.org',
-              image: 'https://extenso.js.org/og-banner.png',
-              offers: {
-                '@type': 'Offer',
-                price: '0',
-                priceCurrency: 'BRL',
-              },
+              image: 'https://extenso.js.org/og.png',
+              isAccessibleForFree: true,
               author: {
-                '@type': 'Organization',
-                name: 'Fidalgo IT Solutions',
-                url: 'https://fidalgoitsolutions.com.br',
+                '@type': 'Person',
+                name: 'Matheus Alves',
+                url: 'https://www.linkedin.com/in/matheusalvesbrx/',
               },
               downloadUrl: 'https://www.npmjs.com/package/extenso',
-              softwareVersion: '2.1.0',
+              softwareVersion: '3.0.0',
               programmingLanguage: ['JavaScript', 'TypeScript'],
+              featureList: [
+                'Números por extenso',
+                'Valores monetários',
+                'Frações e percentuais',
+                'Unidades de medida',
+                'Escalas curta e longa',
+                'Variantes dos países lusófonos e de Macau',
+              ],
             }),
           }}
         />
       </head>
-      <body className={`antialiased`}>
+      <body className={`${inter.variable} ${jetBrainsMono.variable}`}>
         {children}
-        <FloatingDeployAd />
         <Analytics />
       </body>
     </html>

@@ -67,7 +67,7 @@ export function Footer() {
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-400 flex items-center gap-2">
             Desenvolvido e mantido por
-            <Link href="https://github.com/theuves" target="_blank" className="text-white hover:text-[gray] transition-colors">
+            <Link href="https://www.linkedin.com/in/matheusalvesbrx/" target="_blank" className="text-white hover:text-[gray] transition-colors">
               Fidalgo IT Solutions
             </Link>
             desde 2015.

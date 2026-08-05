@@ -15,7 +15,7 @@ export function Support() {
             </div>
             
             <p className="text-sm leading-relaxed text-muted-foreground">
-              O Extenso.js é criado e mantido por <Link href="https://matheusalves.com.br/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Matheus Alves</Link> e utilizado como vitrine para a <Link href="https://fidalgoitsolutions.com.br/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Fidalgo IT Solutions</Link>.
+              O Extenso.js é criado e mantido por <Link href="https://www.linkedin.com/in/matheusalvesbrx/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Matheus Alves</Link> e utilizado como vitrine para a <Link href="https://fidalgoitsolutions.com.br/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">Fidalgo IT Solutions</Link>.
             </p>
             
             <p className="text-sm leading-relaxed text-muted-foreground">
@@ -60,4 +60,3 @@ export function Support() {
     </section>
   )
 }
-
